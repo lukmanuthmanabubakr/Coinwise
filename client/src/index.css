@@ -1,0 +1,10 @@
+:root {
+  --background: #f9ebb2;
+  --color: #555555;
+  ---hover: #444;
+}
+[data-theme="dark"] {
+    --background: #555555;
+    --color: #f9ebb2;
+    --hover: #f7e392;
+}
