@@ -1,10 +1,1 @@
-:root {
-  --background: #f9ebb2;
-  --color: #555555;
-  ---hover: #444;
-}
-[data-theme="dark"] {
-    --background: #555555;
-    --color: #f9ebb2;
-    --hover: #f7e392;
-}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
