@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
 
 :root {
-  --navbar-bg: #F5F5F5;
-  --navbar-text: green;
+  --navbar-bg: #27ae60;
+  --navbar-brandName: #fff;
 }
 
 [data-theme="dark"] {
   --navbar-bg: blue;
-  --navbar-text: rgb(12, 12, 12);
+  --navbar-brandName: #2ecc71;
 }
 
 *{

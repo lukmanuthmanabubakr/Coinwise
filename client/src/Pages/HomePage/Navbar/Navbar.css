@@ -1,9 +1,25 @@
 .navbarComponent {
-    background: var(--navbar-bg);
-    transition:  all 400ms ease;
-    -webkit-transition:  all 400ms ease;
-    -moz-transition:  all 400ms ease;
-    -ms-transition:  all 400ms ease;
-    -o-transition:  all 400ms ease;
+  background: var(--navbar-bg);
+  transition: all 400ms ease;
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -ms-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
-
+.navbarComponent .brandLogo a {
+  display: flex;
+  align-items: center;
+}
+.navbarComponent .brandLogo a img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.navbarComponent .brandLogo a p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--navbar-brandName);
+}
