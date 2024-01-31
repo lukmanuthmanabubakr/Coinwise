@@ -28,9 +28,16 @@
    --navbar-navLinks: #27ae60;
    --navbar-navLinks-hover: #27ae60;
 
-   --navbar-btn-bg-login: #fff;
+   --navbar-btn-bg: #5e5e5e33;
+   --navbar-btn-text: #27ae60;
+
+
+   --navbar-btn-bg-login: #333333;
    --navbar-btn-text-login: #27ae60;
    --navbar-btn-border-login: #27ae60;
+ 
+   --navbar-btn-bg-login--hover: #27ae60;
+   --navbar-btn-text-login-hover: #333333;
 
    
 
