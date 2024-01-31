@@ -36,26 +36,23 @@
   color: var(--navbar-navLinks);
   font-weight: 500;
   position: relative;
-  transition: color 0.3s; /* Add transition effect for color change */
+  transition: color 0.3s; 
 
-  /* Adding a pseudo-element for the line animation */
   &::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
-    width: 0; /* Initial width of the line */
-    height: 2px; /* Height of the line */
-    background-color: var(--navbar-navLinks); /* Color of the line */
-    transition: width 0.3s ease; /* Transition effect for width change */
+    width: 0; 
+    height: 2px; 
+    background-color: var(--navbar-navLinks); 
+    transition: width 0.3s ease; 
   }
 
-  /* Hover effect to animate the line */
   &:hover::before {
-    width: 100%; /* Width of the line when hovered */
+    width: 100%;
   }
 
-  /* Adding a small circle for buzzing effect */
   &::after {
     content: '';
     position: absolute;
@@ -65,15 +62,30 @@
     height: 5px;
     border-radius: 50%;
     background-color: var(--navbar-navLinks);
-    transform: scale(0); /* Initial scale of 0 for buzzing effect */
-    transition: transform 0.3s; /* Transition effect for scaling */
-  }
+    transform: scale(0);
+    transition: transform 0.3s; 
 
-  /* Buzzing animation when NavLink is clicked */
   &.active::after {
-    transform: scale(1.5); /* Scale up the circle when active */
+    transform: scale(1.5); 
   } 
 }
-.navbarComponent .navbarLinks a:hover{
-   
+}
+.navbarComponent .navbarBtn{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+.navbarComponent .navbarBtn .switchBtn{
+    background-color: var(--navbar-btn-bg);
+    padding: 3px;
+    height: 27px;
+    width: 27px;
+    border-radius: 50rem;
+    -webkit-border-radius: 50rem;
+    -moz-border-radius: 50rem;
+    -ms-border-radius: 50rem;
+    -o-border-radius: 50rem;
+    color: var(--navbar-btn-text);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
