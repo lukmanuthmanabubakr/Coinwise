@@ -10,8 +10,6 @@
 
   --navbar-btn-bg: #fff;
   --navbar-btn-text: #27ae60;
-  --navbar-btn-bg-hover: #fff;
-  --navbar-btn-text-hover: #fff;
 }
 
 [data-theme="dark"] {
@@ -20,6 +18,10 @@
    --navbar-brandName-span: #27ae60;
 
    --navbar-navLinks: #27ae60;
+   --navbar-navLinks-hover: #27ae60;
+
+   --navbar-btn-bg: #27ae60;
+   --navbar-btn-text: #fff;
 
 }
 

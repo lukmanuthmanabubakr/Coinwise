@@ -64,11 +64,11 @@
     background-color: var(--navbar-navLinks);
     transform: scale(0);
     transition: transform 0.3s; 
-
+  }
   &.active::after {
     transform: scale(1.5); 
   } 
-}
+
 }
 .navbarComponent .navbarBtn{
     display: flex;
@@ -88,4 +88,17 @@
     color: var(--navbar-btn-text);
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 400ms ease;
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+}
+.navbarComponent .navbarBtn .switchBt:hover{
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    color:  var(--theme-Icon-hover);
 }
