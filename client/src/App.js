@@ -17,7 +17,7 @@ function App() {
     <div className="app" data-theme={isDarkMode ? 'dark' : 'light'}>
       <Navbar switchTheme={switchTheme} isDarkMode={isDarkMode} />
       <Routes>
-        <Route path='/' element={<HomePage/>}/>
+        {/* <Route path='/' element={<HomePage/>}/> */}
       </Routes>
     </div>
   );

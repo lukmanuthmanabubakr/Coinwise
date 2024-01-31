@@ -23,3 +23,6 @@
     font-weight: 600;
     color: var(--navbar-brandName);
 }
+.navbarComponent .brandLogo a p span {
+    color: var(--navbar-brandName-span);
+}
