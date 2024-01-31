@@ -44,7 +44,7 @@ import "./Navbar.css";
 const Navbar = ({ switchTheme, isDarkMode }) => {
   return (
     <nav className="navbarComponent">
-      <div>
+      <div className="brand">
         <NavLink to="/">
           <img src={logo} alt="logo" />
           <p>
