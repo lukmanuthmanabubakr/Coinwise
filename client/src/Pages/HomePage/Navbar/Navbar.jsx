@@ -44,22 +44,22 @@ import "./Navbar.css";
 const Navbar = ({ switchTheme, isDarkMode }) => {
   return (
     <nav className="navbarComponent">
-      <div className="brand">
+      <div className="brandLogo">
         <NavLink to="/">
-          <img src={logo} alt="logo" />
-          <p>
+          <img src={logo} alt="logo" className="brandImage"/>
+          <p className="brandName">
             coin<span>Wise</span>
           </p>
         </NavLink>
       </div>
-      <div>
+      <div className="navbarLinks">
         <NavLink to="/dashboard">Dashboard</NavLink>
         <NavLink to="/library">Library</NavLink>
         <NavLink to="/company">Company</NavLink>
         <NavLink to="/about">About</NavLink>
         <NavLink to="/contact">Contact Us</NavLink>
       </div>
-      <div>
+      <div className="navbarBtn">
         <button onClick={switchTheme}>
           {isDarkMode ? <FiSun /> : <FiMoon />}
         </button>
