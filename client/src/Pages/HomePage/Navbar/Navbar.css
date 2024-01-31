@@ -5,9 +5,5 @@
     -moz-transition:  all 400ms ease;
     -ms-transition:  all 400ms ease;
     -o-transition:  all 400ms ease;
-    
 }
 
-a{
-    color:  var(--navbar-text);
-}
