@@ -19,10 +19,61 @@
   width: 2.5rem;
 }
 .navbarComponent .brandLogo a p{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 600;
     color: var(--navbar-brandName);
 }
 .navbarComponent .brandLogo a p span {
     color: var(--navbar-brandName-span);
+}
+.navbarComponent .navbarLinks{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+.navbarComponent .navbarLinks a{
+  font-size: 1.1rem;
+  color: var(--navbar-navLinks);
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s; /* Add transition effect for color change */
+
+  /* Adding a pseudo-element for the line animation */
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0; /* Initial width of the line */
+    height: 2px; /* Height of the line */
+    background-color: var(--navbar-navLinks); /* Color of the line */
+    transition: width 0.3s ease; /* Transition effect for width change */
+  }
+
+  /* Hover effect to animate the line */
+  &:hover::before {
+    width: 100%; /* Width of the line when hovered */
+  }
+
+  /* Adding a small circle for buzzing effect */
+  &::after {
+    content: '';
+    position: absolute;
+    top: -1px;
+    right: -5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--navbar-navLinks);
+    transform: scale(0); /* Initial scale of 0 for buzzing effect */
+    transition: transform 0.3s; /* Transition effect for scaling */
+  }
+
+  /* Buzzing animation when NavLink is clicked */
+  &.active::after {
+    transform: scale(1.5); /* Scale up the circle when active */
+  } 
+}
+.navbarComponent .navbarLinks a:hover{
+   
 }

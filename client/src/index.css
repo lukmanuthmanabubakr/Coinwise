@@ -3,13 +3,18 @@
 :root {
   --navbar-bg: #27ae60;
   --navbar-brandName: #fff;
-  --navbar-brandName-span: #000;
+  --navbar-brandName-span: #333333;
+
+  --navbar-navLinks: #fff;
+  --navbar-navLinks-hover: #fff;
 }
 
 [data-theme="dark"] {
-  --navbar-bg: #000;
+  --navbar-bg: #333333;
   --navbar-brandName: #fff; 
    --navbar-brandName-span: #27ae60;
+
+   --navbar-navLinks: #27ae60;
 
 }
 
