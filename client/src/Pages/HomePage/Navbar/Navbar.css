@@ -94,57 +94,13 @@
     -ms-transition: all 400ms ease;
     -o-transition: all 400ms ease;
 }
-.navbarComponent .navbarBtn .switchBt:hover{
+.navbarComponent .navbarBtn .switchBtn:hover{
     transform: translateY(-5px);
     -webkit-transform: translateY(-5px);
     -moz-transform: translateY(-5px);
     -ms-transform: translateY(-5px);
     -o-transform: translateY(-5px);
-    color:  var(--theme-Icon-hover);
 }
 .navbarComponent .navbarBtn .button {
-    position: relative;
-    overflow: hidden;
-    height: 3rem;
-    padding: 0 3rem;
-    border-radius: 1.5rem;
-    background: var(--navbar-btn-bg-login);
-    background-size: 400%;
-    color: #fff;
-    color: var();
-    font-size: 1.1rem;
-    border: none;
-    cursor: pointer;
-    -webkit-border-radius: 1.5rem;
-    -moz-border-radius: 1.5rem;
-    -ms-border-radius: 1.5rem;
-    -o-border-radius: 1.5rem;
+   padding: 10px 30px;
 }
-  
-  .navbarComponent .navbarBtn .button:hover::before {
-    transform: scaleX(1);
-  }
-  
-  .navbarComponent .navbarBtn .button-content {
-    position: relative;
-    z-index: 1;
-  }
-  
-  .navbarComponent .navbarBtn .button::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: scaleX(0);
-    transform-origin: 0 50%;
-    width: 100%;
-    height: inherit;
-    border-radius: inherit;
-    background: linear-gradient(
-      82.3deg,
-      rgba(150, 93, 233, 1) 10.8%,
-      rgba(99, 88, 238, 1) 94.3%
-    );
-    transition: all 0.475s;
-  }
-  

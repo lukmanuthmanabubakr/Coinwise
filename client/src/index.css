@@ -26,6 +26,9 @@
    --navbar-btn-bg: #27ae60;
    --navbar-btn-text: #fff;
 
+   --navbar-btn-bg-login: #27ae60;
+   --navbar-btn-text-login: #333333;
+
 }
 
 *{
