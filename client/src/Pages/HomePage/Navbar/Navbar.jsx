@@ -3,6 +3,11 @@ import logo from "../../../Asset/logo.png";
 import { NavLink } from "react-router-dom";
 import { FiSun, FiMoon } from "react-icons/fi";
 import "./Navbar.css";
+import { RiMailCheckLine } from "react-icons/ri";
+import { TbWorldDollar } from "react-icons/tb";
+import { RiEqualizerFill } from "react-icons/ri";
+import { MdGroups2 } from "react-icons/md";
+import { AiFillFund } from "react-icons/ai";
 
 const Navbar = ({ switchTheme, isDarkMode }) => {
   const [active, setActive] = useState("navbarLinks");
@@ -30,11 +35,11 @@ const Navbar = ({ switchTheme, isDarkMode }) => {
         </NavLink>
       </div>
       <div className={active}>
-        <NavLink to="/dashboard">Dashboard</NavLink>
-        <NavLink to="/library">Library</NavLink>
-        <NavLink to="/company">Company</NavLink>
-        <NavLink to="/about">About</NavLink>
-        <NavLink to="/contact">Contact Us</NavLink>
+        <NavLink to="/dashboard"> <span> <RiMailCheckLine /> </span> Dashboard</NavLink>
+        <NavLink to="/library"> <span> <RiMailCheckLine /> </span> Library</NavLink>
+        <NavLink to="/company"> <span> <RiMailCheckLine /> </span> Company</NavLink>
+        <NavLink to="/about"> <span> <RiMailCheckLine /> </span> About</NavLink>
+        <NavLink to="/contact"> <span> <RiMailCheckLine /> </span> Contact Us</NavLink>
       </div>
       <div className="navbarBtn">
         <button className="switchBtn" onClick={switchTheme}>
