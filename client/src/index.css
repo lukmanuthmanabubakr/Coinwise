@@ -18,6 +18,9 @@
   --navbar-btn-bg-login--hover: #fff;
   --navbar-btn-text-login-hover: #27ae60;
 
+
+  --nav-toggler: #fff;
+
 }
 
 [data-theme="dark"] {
@@ -38,6 +41,8 @@
  
    --navbar-btn-bg-login--hover: #27ae60;
    --navbar-btn-text-login-hover: #333333;
+
+   --nav-toggler: #27ae60;
 
    
 

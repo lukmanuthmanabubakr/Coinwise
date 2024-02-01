@@ -124,3 +124,22 @@
     color: var(--navbar-btn-text-login-hover);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
+
+ .navbarComponent .nav_toggler div {
+    width: 2rem;
+    height: 0.1rem;
+    margin: 0.4rem;
+    background: var(--nav-toggler);
+    transition: all 400ms ease;
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+  }
+  
+ .navbarComponent .nav_toggler {
+    display: none;
+    cursor: pointer;
+  }
+
+  

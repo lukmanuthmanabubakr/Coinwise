@@ -5,6 +5,20 @@ import { FiSun, FiMoon } from "react-icons/fi";
 import "./Navbar.css";
 
 const Navbar = ({ switchTheme, isDarkMode }) => {
+  const [active, setActive] = useState("navbarLinks");
+  const [toggleIcon, setToggleIcon] = useState("nav_toggler");
+
+  const navToggle = () => {
+    active === "navbarLinks"
+      ? setActive("navbarLinks nav_active")
+      : setActive("navbarLinks");
+
+    //Toggler Icon
+
+    toggleIcon === "nav_toggler"
+      ? setToggleIcon("nav_toggler toggle")
+      : setToggleIcon("nav_toggler");
+  };
   return (
     <nav className="navbarComponent">
       <div className="brandLogo">
@@ -15,7 +29,7 @@ const Navbar = ({ switchTheme, isDarkMode }) => {
           </p>
         </NavLink>
       </div>
-      <div className="navbarLinks">
+      <div className={active}>
         <NavLink to="/dashboard">Dashboard</NavLink>
         <NavLink to="/library">Library</NavLink>
         <NavLink to="/company">Company</NavLink>
@@ -27,6 +41,12 @@ const Navbar = ({ switchTheme, isDarkMode }) => {
           {isDarkMode ? <FiSun  size={19}/> : <FiMoon  size={19}/>}
         </button>
         <NavLink to="/login">Login</NavLink>
+      </div>
+
+      <div onClick={navToggle} className={toggleIcon}>
+        <div className="line1"></div>
+        <div className="line2"></div>
+        <div className="line3"></div>
       </div>
     </nav>
   );
