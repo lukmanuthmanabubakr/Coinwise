@@ -142,7 +142,7 @@
     cursor: pointer;
   }
 
-@media screen and (max-width: 836px) {
+@media screen and (max-width: 841px) {
   .navbarComponent {
     background: var(--navbar-bg);
     transition: all 400ms ease;
@@ -155,4 +155,12 @@
     align-items: center;
     padding: 12px 20px;
   }
+  .navbarComponent .navbarLinks{
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+}
+}
+@media screen and (max-width: 817px) {
+
 }
