@@ -142,4 +142,17 @@
     cursor: pointer;
   }
 
-  
+@media screen and (max-width: 836px) {
+  .navbarComponent {
+    background: var(--navbar-bg);
+    transition: all 400ms ease;
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+  }
+}
