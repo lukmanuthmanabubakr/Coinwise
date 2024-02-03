@@ -28,7 +28,7 @@
 }
 .navbarComponent .navbarLinks {
   display: flex;
-  align-items: center;
+  justify-content: center;
   gap: 1.2rem;
 }
 .navbarComponent .navbarLinks a {
@@ -159,7 +159,6 @@
   }
   .navbarComponent .navbarLinks {
     display: flex;
-    align-items: center;
     gap: 1.1rem;
   }
 }
