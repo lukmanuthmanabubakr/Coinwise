@@ -40,6 +40,14 @@ const Navbar = ({ switchTheme, isDarkMode }) => {
         <NavLink to="/company"> <span> <RiMailCheckLine /> </span> Company</NavLink>
         <NavLink to="/about"> <span> <RiMailCheckLine /> </span> About</NavLink>
         <NavLink to="/contact"> <span> <RiMailCheckLine /> </span> Contact Us</NavLink>
+
+
+        <div className="navbarBtns">
+        <button className="switchBtn" onClick={switchTheme}>
+          {isDarkMode ? <FiSun  size={19}/> : <FiMoon  size={19}/>}
+        </button>
+        <NavLink to="/login">Login</NavLink>
+      </div>
       </div>
       <div className="navbarBtn">
         <button className="switchBtn" onClick={switchTheme}>
