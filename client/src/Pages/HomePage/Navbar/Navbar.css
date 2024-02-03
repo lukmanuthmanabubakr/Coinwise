@@ -120,7 +120,6 @@
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
-/* Button Hover Animation */
 .navbarComponent .navbarBtn a:hover {
   background-color: var(--navbar-btn-bg-login--hover);
   color: var(--navbar-btn-text-login-hover);
