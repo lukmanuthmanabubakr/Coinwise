@@ -38,7 +38,7 @@
   position: relative;
   transition: color 0.3s;
 }
-.navbarComponent .navbarLinks a span{
+.navbarComponent .navbarLinks a span {
   display: none;
 }
 
@@ -160,7 +160,6 @@
   }
 }
 
-
 @media screen and (max-width: 817px) {
   .navbarComponent .nav_toggler {
     display: block;
@@ -195,12 +194,12 @@
     font-weight: 500;
     position: relative;
     font-size: 1.3rem;
-    transition: color 0.3s;
-    -webkit-transition: color 0.3s;
-    -moz-transition: color 0.3s;
-    -ms-transition: color 0.3s;
-    -o-transition: color 0.3s;
+    transition: all 400ms ease;
     margin-top: 2rem;
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
 }
 
   .nav_active {
@@ -228,62 +227,75 @@
     -ms-transform: rotate(45deg) translate(-4px, -6px);
     -o-transform: rotate(45deg) translate(-4px, -6px);
   }
-  .navbarComponent .navbarBtn{
+  .navbarComponent .navbarBtn {
     display: none;
   }
-  
-.navbarComponent .navbarBtns {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-  padding-right: 8px;
-}
-.navbarComponent .navbarBtns .switchBtn {
-  background-color: var(--navbar-btn-bg);
-  padding: 3px;
-  height: 27px;
-  width: 27px;
-  border-radius: 50rem;
-  -webkit-border-radius: 50rem;
-  -moz-border-radius: 50rem;
-  -ms-border-radius: 50rem;
-  -o-border-radius: 50rem;
-  color: var(--navbar-btn-text);
-  cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  transition: all 400ms ease;
-  -webkit-transition: all 400ms ease;
-  -moz-transition: all 400ms ease;
-  -ms-transition: all 400ms ease;
-  -o-transition: all 400ms ease;
-}
-.navbarComponent .navbarBtns .switchBtn:hover {
-  transform: translateY(-5px);
+
+  .navbarComponent .navbarBtns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-right: 8px;
+  }
+  .navbarComponent .navbarBtns .switchBtn {
+    background-color: var(--navbar-btn-bg);
+    padding: 3px;
+    height: 27px;
+    width: 27px;
+    border-radius: 50rem;
+    -webkit-border-radius: 50rem;
+    -moz-border-radius: 50rem;
+    -ms-border-radius: 50rem;
+    -o-border-radius: 50rem;
+    color: var(--navbar-btn-text);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 400ms ease;
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+  }
+  .navbarComponent .navbarBtns .switchBtn:hover {
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+  }
+
+  .navbarComponent .navbarBtns a {
+    display: inline-block;
+    padding: 15px 50px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid var(--navbar-btn-border-login);
+    color: var(--navbar-btn-text-login);
+    background-color: var(--navbar-btn-bg-login);
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+
+  .navbarComponent .navbarBtns a:hover {
+    background-color: var(--navbar-btn-bg-login--hover);
+    color: var(--navbar-btn-text-login-hover);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .navbarComponent .navbarLinks a::after {
+    display: none;
+  }
+  .navbarComponent .navbarLinks a::before {
+    display: none;
+  }
+  .navbarComponent .navbarLinks a:hover{
+    transform: translateY(-5px);
   -webkit-transform: translateY(-5px);
   -moz-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
   -o-transform: translateY(-5px);
-}
-
-.navbarComponent .navbarBtns a {
-  display: inline-block;
-  padding: 15px 50px;
-  font-size: 1.2rem;
-  font-weight: 700;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  border: 2px solid var(--navbar-btn-border-login);
-  color: var(--navbar-btn-text-login);
-  background-color: var(--navbar-btn-bg-login);
-  border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-}
-
-.navbarComponent .navbarBtns a:hover {
-  background-color: var(--navbar-btn-bg-login--hover);
-  color: var(--navbar-btn-text-login-hover);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
+  }
 }
