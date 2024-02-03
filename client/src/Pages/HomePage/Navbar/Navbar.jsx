@@ -30,7 +30,7 @@ const Navbar = ({ switchTheme, isDarkMode }) => {
         <NavLink to="/">
           <img src={logo} alt="logo" className="brandImage"/>
           <p className="brandName">
-            coin<span>Wise</span>
+            shaft<span>Coin</span>
           </p>
         </NavLink>
       </div>
