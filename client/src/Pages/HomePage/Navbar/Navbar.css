@@ -151,6 +151,131 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 857px) {
+  .navbarLinks {
+    position: fixed;
+    top: 9.8vh;
+    right: 0;
+    width: 50%;
+    height: auto;
+    overflow: auto;
+    background: var(--navbar-bg);
+    /* background: plum; */
+    flex-direction: column;
+    
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transition: all 400ms ease;
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 8px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+      rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+      rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+   
+    
+  }
+  .navbarComponent .navbarLinks a {
+    display: flex;
+    /* align-items: center; */
+    /* color: var(--navbar-navLinks);
+    font-weight: 500;
+    position: relative;
+    font-size: 1.3rem;
+    transition: all 400ms ease;
+    margin-bottom: 2rem;
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease; */
+    transition: all 400ms ease;
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -ms-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+  }
+  .navbarComponent .navbarLinks a span {
+    display: flex;
+    font-size: 25px;
+    padding-right: 8px;
+  }
+
+  .nav_active {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-4px, 6px);
+    -webkit-transform: rotate(-45deg) translate(-4px, 6px);
+    -moz-transform: rotate(-45deg) translate(-4px, 6px);
+    -ms-transform: rotate(-45deg) translate(-4px, 6px);
+    -o-transform: rotate(-45deg) translate(-4px, 6px);
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-4px, -6px);
+    -webkit-transform: rotate(45deg) translate(-4px, -6px);
+    -moz-transform: rotate(45deg) translate(-4px, -6px);
+    -ms-transform: rotate(45deg) translate(-4px, -6px);
+    -o-transform: rotate(45deg) translate(-4px, -6px);
+  }
+  .navbarComponent .nav_toggler {
+    display: block;
+  }
+  .navbarComponent .navbarBtn {
+    display: none;
+  }
+
+  .navbarComponent .navbarBtns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 1rem; */
+    /* padding-right: 8px; */
+  }
+
+  .navbarComponent .navbarLinks a:hover{
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+  }
+
+  
+.navbarComponent .navbarLinks a::before {
+  display: none;
+}
+
+.navbarComponent .navbarLinks a:hover::before {
+  display: none;
+}
+
+.navbarComponent .navbarLinks a::after {
+  display: none;
+}
+.navbarComponent .navbarLinks a.active::after {
+  display: none;
+}
+
+}
+
 /* 
 @media screen and (max-width: 841px) {
   .navbarComponent {
