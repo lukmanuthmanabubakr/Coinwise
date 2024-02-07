@@ -44,7 +44,7 @@ const Navbar = ({ switchTheme, isDarkMode }) => {
 
         <div className="navbarBtns">
         <button className="switchBtn" onClick={switchTheme}>
-          {isDarkMode ? <FiSun  size={19}/> : <FiMoon  size={19}/>}
+          {isDarkMode ? <FiSun  size={20}/> : <FiMoon  size={19}/>}
         </button>
         <NavLink to="/login">Login</NavLink>
       </div>
