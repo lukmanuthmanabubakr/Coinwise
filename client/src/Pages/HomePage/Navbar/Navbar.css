@@ -15,8 +15,9 @@
   align-items: center;
 }
 .navbarComponent .brandLogo a img {
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 2.4rem;
+  width: 2.4rem;
+  padding-right: 3px;
 }
 .navbarComponent .brandLogo a p {
   font-size: 1.3rem;
@@ -108,7 +109,7 @@
 .navbarComponent .navbarBtn a {
   display: inline-block;
   padding: 10px 30px;
-  font-size: 16px;
+  font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
@@ -124,6 +125,10 @@
   -o-transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
+.navbarComponent .navbarBtn a:hover {
+  background: var(--navbar-btn-bg-login--hover);
+  color: var(--navbar-btn-text-login-hover);
+}
 
 .navbarComponent .navbarBtns {
   display: none;
@@ -145,110 +150,6 @@
   display: none;
   cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* 
 @media screen and (max-width: 841px) {
