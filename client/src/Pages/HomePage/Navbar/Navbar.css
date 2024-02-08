@@ -621,6 +621,67 @@
 /* 640 */
 
 
+@media screen and (max-width: 640px){
+   
+  .navbarLinks {
+    position: fixed;
+    top: 17vh;
+    right: 0;
+    width: 100%;
+    height: 50vh;
+    overflow-y: auto;
+    /* background: red; */
+    background: var(--navbar-bg);
+    flex-direction: column;
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transition: all 400ms ease;
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    padding-top: 15px;
+    padding-bottom: 12px;
+    padding-left: 19px;
+    padding-right: 19px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+      rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+      rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    display: flex;
+    gap: 10rem;
+    border-bottom-left-radius: 1px;
+  }
+  
+  .nav_active {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-4px, 6px);
+    -webkit-transform: rotate(-45deg) translate(-4px, 6px);
+    -moz-transform: rotate(-45deg) translate(-4px, 6px);
+    -ms-transform: rotate(-45deg) translate(-4px, 6px);
+    -o-transform: rotate(-45deg) translate(-4px, 6px);
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-4px, -6px);
+    -webkit-transform: rotate(45deg) translate(-4px, -6px);
+    -moz-transform: rotate(45deg) translate(-4px, -6px);
+    -ms-transform: rotate(45deg) translate(-4px, -6px);
+    -o-transform: rotate(45deg) translate(-4px, -6px);
+  }
+  
+}
 
 @media screen and (max-width: 600px){
   .navbarComponent {
