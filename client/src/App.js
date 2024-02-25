@@ -1,26 +1,25 @@
-// import React, { useState } from 'react';
-// import './App.css';
-// import useLocalStorage from "use-local-storage"
-// import Navbar from './Pages/Navbar/Navbar';
-// import { Route, Routes } from 'react-router-dom';
-// import HomePage from './Pages/HomePage/HomePage';
-// import About from './Pages/About/About';
+import React, { useState } from 'react';
+import './App.css';
+import useLocalStorage from "use-local-storage";
+import { Route, Routes } from 'react-router-dom';
 
-// function App() {
-//   const [isDarkMode, setIsDarkMode] = useLocalStorage("theme", false);
 
-//   const switchTheme = () => {
-//     setIsDarkMode(prevMode => !prevMode);
-//   };
+function App() {
+  const [isDarkMode, setIsDarkMode] = useLocalStorage("theme", false);
 
-//   return (
-//     <div className="app" data-theme={isDarkMode ? 'dark' : 'light'}>
-//       <Navbar switchTheme={switchTheme} isDarkMode={isDarkMode} />
-//       <Routes>
-//         <Route path='/' element={<HomePage/>}/>
-//       </Routes>
-//     </div>
-//   );
-// }
+  const switchTheme = () => {
+    setIsDarkMode(prevMode => !prevMode);
+  };
 
-// export default App;
+  return (
+    <div className="app" data-theme={isDarkMode ? 'dark' : 'light'}>
+      {/* <Navbar switchTheme={switchTheme} isDarkMode={isDarkMode} />
+      <Routes>
+        <Route path='/' element={<HomePage/>}/>
+      </Routes> */}
+      app
+    </div>
+  );
+}
+
+export default App;
