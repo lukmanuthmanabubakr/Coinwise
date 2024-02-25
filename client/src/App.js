@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import useLocalStorage from "use-local-storage"
-import Navbar from './Pages/HomePage/Navbar/Navbar';
+import Navbar from './Pages/Navbar/Navbar';
 import { Route, Routes } from 'react-router-dom';
 import HomePage from './Pages/HomePage/HomePage';
 import About from './Pages/About/About';
