@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
-import useLocalStorage from "use-local-storage";
+import useLocalStorage from "use-local-storage"
 import { Route, Routes } from 'react-router-dom';
+import Navbar from './Containers/Navbar/Navbar';
 
 
 function App() {
@@ -13,11 +14,13 @@ function App() {
 
   return (
     <div className="app" data-theme={isDarkMode ? 'dark' : 'light'}>
-      {/* <Navbar switchTheme={switchTheme} isDarkMode={isDarkMode} />
+      <Navbar switchTheme={switchTheme} isDarkMode={isDarkMode} />
+
       <Routes>
-        <Route path='/' element={<HomePage/>}/>
-      </Routes> */}
-      app
+      {/* <Route path='/' element={</>}/> */}
+
+      </Routes>
+      
     </div>
   );
 }
