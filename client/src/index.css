@@ -71,7 +71,7 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Style for the scrollbar */
+/* Style for these scrollbar */
 body::-webkit-scrollbar {
   width: 5px;
 }
