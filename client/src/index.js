@@ -13,5 +13,5 @@ root.render(
   </React.StrictMode>
 );
 
-// to log results (for example: reportWebVitals(console.log))
+// to log results (for example: reportWebVitals
  
