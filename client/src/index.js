@@ -13,5 +13,5 @@ root.render(
   </React.StrictMode>
 );
 
-// to log resul
+// to log r
  
