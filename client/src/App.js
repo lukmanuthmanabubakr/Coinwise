@@ -17,7 +17,7 @@ function App() {
       <Navbar switchTheme={switchTheme} isDarkMode={isDarkMode} />
 
       <Routes>
-      {/* <Route path='/' element={</>}/> */}
+
 
       </Routes>
       
