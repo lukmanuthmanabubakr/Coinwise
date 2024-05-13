@@ -18,7 +18,7 @@ const Navbar = ({ switchTheme, isDarkMode }) => {
       ? setActive("navbarLinks nav_active")
       : setActive("navbarLinks");
 
-    //Toggler Icon
+    //Toggler Icon button
 
     toggleIcon === "nav_toggler"
       ? setToggleIcon("nav_toggler toggle")
