@@ -162,7 +162,6 @@
     width: 50%;
     height: auto;
     overflow: auto;
-    /* b
     background: var(--navbar-bg);
     flex-direction: column;
     transform: translateX(100%);
